@@ -1,0 +1,22 @@
+<% provide(:title, 'Show bookmarks') %>
+
+<h1>Bookmarks</h1>
+<p id="notice"><%= notice %></p>
+
+<table>
+    <tr>
+        <td><b>Url:</b></td>
+        <td><%= @bookmark.URL %></td>
+    </tr>
+    <tr>
+        <td><b>Name:</b>
+        <td><%= @bookmark.Name %></td>
+    </tr>
+    <tr>
+        <td><b>Date saved:</b></td>
+        <td><%= @bookmark.Date_Saved %></td>
+    </tr>
+</table>
+
+<br /><%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |
+<%= link_to 'Back', bookmarks_path %>
